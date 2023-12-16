@@ -1,0 +1,61 @@
+/* index.module.css */
+
+.button_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #104477;
+  }
+  
+  .button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+  
+  .button:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:focus-visible {
+    box-shadow: 0 0 10px 4px #3498db;
+  }
+  
+  /* Estilo para botões desativados */
+  .button:disabled {
+    background-color: #bdc3c7;
+    color: #ecf0f1;
+    cursor: not-allowed;
+  }
+  
+  .button:disabled:hover {
+    background-color: #bdc3c7;
+  }
+  
+  /* Adiciona um espaçamento entre os botões */
+  .button + .button {
+    margin-left: 20px;
+  }
+  
+  /* Estilo quando o botão está pressionado (ativado) */
+  .button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+    background-color: #2980b9;
+  }
+  
+  .home {
+    background-color: #f0f0f0; /* Cor de fundo para a página Home */
+  }  
